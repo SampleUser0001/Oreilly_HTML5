@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dive into HTML5</title>
+<script src="modernizr.min.js"></script>
+<script>
+function supports_canvas() {
+    alert('hoge')
+}
+
+function supports_canvas_text() {
+    if (!supports_canvas()) {
+        return false;
+    }
+    var dummy_canvas = document.createElement('canvas');
+    var context = dummy_canvas.getContext('2d');
+    return typeof context.fillText == 'function';
+}
+</script>
+</head>
+<body>
+    <input type="button" value="supports_canvas" onclick="getModanizr();"/>
+</body>
+</html>
