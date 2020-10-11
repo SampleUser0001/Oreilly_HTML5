@@ -1,5 +1,7 @@
 # Oreilly_HTML5
 
-## 参考
+## 3章 HTML 文書の構造と意味付け
 
-http://diveintohtml5.info/
+### 参考
+
+http://diveintohtml5.info/examples/blog-original.html
