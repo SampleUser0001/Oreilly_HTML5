@@ -1,11 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <!-- 文字コードは常に指定しろ -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- この書き方でもいい -->
+  <!-- <meta charset="utf-8" /> -->
+
   <meta name="robots" content="noindex" />
+
   <title>My Weblog</title>
-  <link rel="stylesheet" type="text/css" href="style-original.css" />
+
+  <!-- linkは別のページを参照する理由を説明する -->
+  <!-- rel="stylesheet"は外部ソースを参照する。 -->
+  <!-- type="text/css"はなくてもいい（CSSはWebで使用されている唯一のスタイルシート言語なので、デフォルトになっている。） -->
+  <link rel="stylesheet" href="style-original.css" />
+
+  <!-- rel="alternate"はfeedの自動通知を有効にする。 -->
+  <!-- typeは省略できない。 -->
   <link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />
   <link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />
 </head>
